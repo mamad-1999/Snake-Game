@@ -1,4 +1,4 @@
-# Snake-Game
+# Snake-Game 🐍🍎
 Snake game developed by Canvas &amp; vanilla Js using OOP paradigm 
 
 
