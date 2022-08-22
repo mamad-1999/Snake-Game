@@ -14,7 +14,7 @@ body {
 }
 
 canvas {
-  background-image: url("/assets/image/11.png");
+  background-image: url("assets/image/11.png");
   background-position: center;
   border: 10px solid rgb(109, 89, 0);
   background-color: rgba(0, 95, 0, 0.5);

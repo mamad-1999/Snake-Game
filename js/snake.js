@@ -1,6 +1,6 @@
 import { scale, ctx, canvas } from "./feture.js";
 
-const sound = new Audio('../assets/sound/1.wav')
+const sound = new Audio('assets/sound/1.wav')
 
 class Snake {
     constructor() {
