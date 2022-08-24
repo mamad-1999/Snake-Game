@@ -12,7 +12,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   gap: 25px;
   background-color: #161623;
   font-family: "Poppins", sans-serif;
@@ -25,6 +24,27 @@ canvas {
   border: 10px solid rgb(109, 89, 0);
   background-color: rgba(0, 95, 0, 0.5);
   background-blend-mode: darken;
+}
+
+.wrapper-canvas {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.score{
+  color: #fff;
+}
+
+.wrapper-key {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .keys {
@@ -63,12 +83,19 @@ canvas {
   top: -4px;
 }
 
-.desc{
+.desc {
   color: #fff;
 }
 
-@media screen and (max-width: 600px) {
-  .desc{
+@media screen and (max-width: 1024px) {
+  body {
+    flex-direction: column;
+  }
+  .wrapper-canvas,
+  .wrapper-key {
+    width: 100%;
+  }
+  .desc {
     display: none;
   }
 }

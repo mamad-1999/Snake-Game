@@ -1,4 +1,7 @@
 import { scale, ctx, canvas } from "./feture.js";
+const score = document.querySelector('.score span')
+
+console.log(score);
 
 const sound = new Audio('assets/sound/1.wav')
 
@@ -90,6 +93,7 @@ class Snake {
         if (this.x === food.x && this.y === food.y) {
             console.log("yes")
             this.total++
+            score.innerHTML = this.total
             sound.play()
             return true
         }

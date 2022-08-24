@@ -6,8 +6,9 @@ let canvas = document.getElementById("myConvas")
 let ctx = canvas.getContext("2d")
 
 let scale = 10
-const row = canvas.height / scale // 36
-const column = canvas.width / scale // 36
+let speed = 150
+const row = canvas.height / scale
+const column = canvas.width / scale
 
 window.onload = () => {
     let snake = new Snake()
@@ -16,6 +17,14 @@ window.onload = () => {
     food.generateRandomFoodLocation()
 
     setInterval(() => {
+        let deviceWidth = window.innerWidth
+        if (deviceWidth > 500) {
+            canvas.width = 460
+            canvas.height = 460
+        } else {
+            canvas.width = 360
+            canvas.height = 360
+        }
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         snake.snakeDraw()
         food.foodDraw()
@@ -24,7 +33,7 @@ window.onload = () => {
         if (snake.isEatFood(food)) {
             food.generateRandomFoodLocation()
         }
-    }, 150);
+    }, speed);
 
     window.addEventListener("keydown", (e) => {
         let clicked = e.code.replace("Arrow", "")
