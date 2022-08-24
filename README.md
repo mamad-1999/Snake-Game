@@ -16,7 +16,7 @@ This project was an exercise for the canvas
 - [x]  Random food location
 - [x]  Passing through walls and re-entering the game
 - [x]  Adding a tail to the snake after eating
-- [ ]  Record scores
+- [x]  Record scores
 - [ ]  Lose after hitting the tail
 - [ ]  Increasing the speed of the snake
 - [x]  Add arrow key for mobile 
